@@ -5,16 +5,10 @@
 	<br/>
 	<button id="" ="Submit" data-ng-disabled="!inputName">Submit</button> 
 	<br/>
-	<div data-ng-controller="SimpleController">
+	<div data-ng-init = "names = ['Ram','Sam','Tom']">
 		<ol>
 		<li data-ng-repeat = "name in names">{{name}}</li>
 		</ol>
 	</div>
 </div>
-<script>
-	function SimpleController($scope) {
-        $scope.names = ['Dave', 'Napur', 'Heedy', 'Shriva'];
-    }
 
-    samplesModule.controller('SimpleController', SimpleController);
-</script>

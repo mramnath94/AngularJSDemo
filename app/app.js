@@ -43,7 +43,7 @@ app.config(function ($routeProvider) {
             })
         .when('/staticPage',
             {
-                controller: 'SimpleController',
+                controller: 'CustomersController',
                 templateUrl: '/app/partials/staticPage.html'
             })
         .otherwise({ redirectTo: '/customers' });
